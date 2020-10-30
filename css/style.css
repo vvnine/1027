@@ -1,0 +1,44 @@
+body{
+  background-color: #000;
+}
+h1{
+  text-align: center;
+  font-size: 25px;
+  font-weight: normal;
+  color: #FF7F00;
+}
+
+.banner1 ul li{
+  float: left;
+  width: 200px;
+  height: 300px;
+  background-color: #999999;
+  margin-right: 75px;
+  margin-top: 15px;
+  box-shadow: 0 4px 5px rgba(0,0,0,0.2);
+  padding-left: 25px;
+  padding-top: 15px;
+}
+
+.banner1 li h5 {
+  font-size: 15px;
+  color: #FF7F00;
+}
+ul{
+  list-style: none;
+}
+a{
+  width: 200px;
+  height: 50px;
+  display: block;
+  text-align: center;
+  line-height: 50px;
+  color: #FF7F00;
+  font-size: 22px;
+  text-decoration: none;/*取消下划线*/
+}
+
+.aTop:hover{
+  background: url("../img/h.png") no-repeat;
+}
+
