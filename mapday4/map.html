@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>MAP上海</title>
+    <style>
+        body{
+            background-color: #F5F5DC;
+        }
+       #container{
+            height:500px;
+            width:100%;
+        }
+       h2{
+           font-family: "微软雅黑", "bold","16px";
+           color: #FF7F50;
+       }
+        .video{
+            width:1060px;
+            margin:0 auto
+        }
+    </style>
+</head>
+<body>
+<h2>欢迎来到上海市长宁区</h2>
+<br>
+<form action="">
+    登录名：<input type="text" placeholder="请输入登录名" pattern="^[a-z0-9A-Z]{3，5}$" title="用户名限制3至5个字符" autofocus>
+    邮箱：<input type="email" placeholder="请输入邮箱号" autofocus>
+    学号：<input type="number" placeholder="请输入学号" autofocus>
+    <input type="submit">
+    <br>
+</form>
+<div id="container"></div>
+<script type="text/javascript" src="https://webapi.amap.com/maps?v=1.4.15&key=4469bbb4dc94824515eb2ddd2d8e8ca0"></script>
+<script type="text/javascript">
+    //初始化地图对象，加载地图
+    window.onload = function(){
+        var map = new AMap.Map("container", {
+            zoom: 15, //设置地图显示的缩放级别
+            center: [121.387797,31.214255] //设置地图中心点坐标
+        });
+
+        // 创建一个 Marker 实例：（标记点）
+        var marker = new AMap.Marker({
+            position: new AMap.LngLat(121.388633,31.21493), // 经纬度对象，也可以是经纬度构成的一维数组[116.39, 39.9]
+            title: "位置标题"
+        });
+
+        // 将创建的点标记添加到已有的地图实例：
+        map.add(marker);
+
+    }
+</script>
+<h2>上海宣传视频</h2>
+<div class="video">
+<video src="propagate.mp4" controls></video></div>
+</body>
+</html>
