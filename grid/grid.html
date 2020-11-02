@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>grid</title>
+    <style>
+        article{
+            width:500px;
+            height:500px;
+            border: solid 5px #000;
+            display: grid;
+            grid-template-rows:200px 1fr 200px;
+            grid-template-columns: 200px 1fr;
+            grid-template-areas:"header header"
+            "nav main"
+            "footer footer";
+        }
+        header,main{
+            background-color: deepskyblue;
+            background-clip: content-box;
+            padding:10px;
+        }
+        nav,footer{
+            background-color: orange;
+            background-clip: content-box;
+            padding:10px;
+        }
+        header{
+            grid-area:header;
+        }
+        nav{
+            grid-area:nav;
+        }
+        main{
+            grid-area:main;
+        }
+        footer{
+            grid-area:footer;
+        }
+    </style>
+</head>
+<body>
+<article>
+    <header></header>
+    <nav></nav>
+    <main></main>
+    <footer></footer>
+</article>
+</body>
+</html>

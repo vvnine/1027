@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>flex实现双飞翼布局</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            background-color: #fff;
+            display: flex;
+            height:300px;
+        }
+        .content{
+            background-color: deepskyblue;
+            flex-grow: 1;
+            order:1;
+            text-align: center;
+            line-height: 300px;
+        }
+        .left{
+            background-color: pink;
+            flex-basis: 150px;
+            order: 0;
+            text-align: center;
+            line-height: 300px;
+        }
+        .right{
+            background-color: orange;
+            flex-basis: 150px;
+            order: 2;
+            text-align: center;
+            line-height: 300px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="content">中</div>
+    <div class="left">左</div>
+    <div class="right">右</div>
+</body>
+</html>
