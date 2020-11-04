@@ -1,5 +1,5 @@
-alert("接下来是魔法世界")
 let myImage = document.querySelector('img');
+
 myImage.onclick = function() {
   let mySrc = myImage.getAttribute('src');
   if (mySrc === 'img/11.jpeg') {
@@ -33,5 +33,3 @@ function setUserName() {
     myHeading.innerHTML = '欢迎，霍格沃茨' + myName;
   }
 }
-
-
