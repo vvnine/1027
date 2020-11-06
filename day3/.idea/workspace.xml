@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="fdbe2810-69d9-4f6e-895c-6a5d40dc328c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/day1.html" beforeDir="false" afterPath="$PROJECT_DIR$/day1.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/main.js" afterDir="false" />
     </list>
@@ -15,6 +16,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -31,7 +34,8 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../iconfont/iconfont.html" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -55,10 +59,29 @@
       <workItem from="1603951360808" duration="9087000" />
       <workItem from="1604568521592" duration="3270000" />
       <workItem from="1604576727778" duration="6000" />
+      <workItem from="1604638113305" duration="14498000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="903" y="161" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1604646113381">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="903" y="161" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1604646113381" />
+    <state x="933" y="170" key="FileChooserDialogImpl" timestamp="1604653505799">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="933" y="170" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1604653505799" />
+    <state x="-6" y="0" width="781" height="830" key="dock-window-1" timestamp="1604648156263">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="-6" y="0" width="781" height="830" key="dock-window-1/0.0.1536.824@0.0.1536.824" timestamp="1604648156263" />
+    <state x="97" y="28" width="595" height="732" key="dock-window-2" timestamp="1604656899736">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="97" y="28" width="595" height="732" key="dock-window-2/0.0.1536.824@0.0.1536.824" timestamp="1604656899736" />
   </component>
 </project>

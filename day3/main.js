@@ -1,18 +1,48 @@
 alert("欢迎来到魔法世界")
-var mv = document.getElementById('mv');
-var flag = 1;
-mv.onclick = function(){
-  if(flag ===1){
-    mv.src = 'img/22.jpg';
-    flag = 2;
-  }else if(flag === 2){
-    mv.src = 'img/11.jpeg';
-    flag = 1;
+var that;
+class Tab{
+  constructor(id) {
+    //获取元素
+    that = this;
+    this.main = document.querySelector(id);
+    this.lis = this.main.querySelectorAll('li');
+    this.img = this.main.querySelector('img');
+    this.init();
   }
+  init(){
+    for (var i=0;i<this.lis.length;i++){
+      this.lis[i].index = i;
+      this.lis[i].onclick = this.toggleTab;
+      }
+    }
+  toggleTab(){
+    this.className='bannerNew';
+    this.img.src = 'img/22.jpg';
 }
-window.onbeforeunload = function(){
-  return"确定离开页面吗？";
 }
+new Tab('#banner');
+
+//
+//   toggleTab(){
+//     this.updateNode();
+//     this.add.onclick = this.addT
+//   }
+// }
+//
+// var mv = document.getElementById('mv');
+// var flag = 1;
+// mv.onclick = function(){
+//   if(flag ===1){
+//     mv.src = 'img/22.jpg';
+//     flag = 2;
+//   }else if(flag === 2){
+//     mv.src = 'img/11.jpeg';
+//     flag = 1;
+//   }
+// }
+// window.onbeforeunload = function(){
+//   return"确定离开页面吗？";
+// }
 // let myImage = document.querySelector('img');
 // myImage.onclick = function() {
 //   let mySrc = myImage.getAttribute('src');

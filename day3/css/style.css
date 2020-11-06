@@ -7,7 +7,30 @@ h1{
   font-weight: normal;
   color: #FF7F00;
 }
-
+.toggleImg,
+.addImg,
+.delImg {
+  background-color: orange;
+  font-size: 16px;
+  border-radius: 5px;
+  margin:5px auto;
+  width: 110px;
+  height: 25px;
+  text-align: center;
+  box-shadow: 0 10px 5px 5px rgba(0, 0, 0, 0.3);
+}
+.bannerNew{
+  background-color: orange;
+  font-size: 16px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right:auto;
+  width: 110px;
+  height: 25px;
+  text-align: center;
+  box-shadow: 0 10px 5px 5px rgba(0, 0, 0, 0.3);
+}
 .banner1 ul li{
   float: left;
   width: 200px;
