@@ -4,8 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>html5</title>
+    <style>
+        .active{
+            color:red;
+        }
+    </style>
+
+    <!-- <script src="index.js"></script> -->
 </head>
 <body>
-    <div id='root'></div>
+    <!-- <div id='root'></div></br> -->
+    <div id="app">
+      <h2>当前点击计数：{{counter}}</h2>
+      <button v-on:click="add">+</button>
+      <button @click="sub">-</button>
+      <ul>
+       <li v-for="(item,index) in movies"
+           :class="{active :currentIndex === index}"
+           @click="liClick(index)">
+         {{index}}.{{item}}
+        </li>
+        </ul>
+        <h2 :style="{fontSize: Size}">{{message}}</h2>
+    </div>
+    <script src="vue.js"></script>
+    <script type="text/javascript">    
+    const app= new Vue({
+        el:'#app',
+        data:{
+            counter:0,
+            currentIndex:0,
+            message:'测试测试',
+            Size:'100px',
+            movies: ['丹尼尔·雷德克里夫','鲁伯特·格林特','艾玛·沃特森','理查德·哈里斯']
+        },
+        methods:{
+            add:function(){
+                this.counter++
+            },
+            sub:function(){
+                this.counter--
+            },
+            }
+        })
+
+    
+        </script>
 </body>
 </html>
