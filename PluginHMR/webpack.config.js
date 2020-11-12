@@ -29,7 +29,15 @@ module.exports={
                 test: /\.(eot|ttf|svg|woff)$/,
                 use:{
                     loader:'file-loader',
-                }}
+                }},
+            {
+                test: /\.js$/,
+                exclude: /node_modules/,
+                loader:"babel-loader",
+                options:{
+                    presets:["@babel/preset-env"]
+                }
+            }
         ]
     },
     //plugins的配置
@@ -52,4 +60,9 @@ module.exports={
     //模式
     mode:'development',
     // mode:'production'
+    resolve:{//解决runtime-only的template问题
+        alias:{
+            'vue$':'vue/dist/vue.esm.js'
+        }
+    }
 }

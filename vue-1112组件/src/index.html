@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>v-if,v-else,v-else-if,组件化</title>
+</head>
+<body>
+    <div id="app">
+        <!-- <h3 v-if="isShow">isShow为true显示这行文字</h3>
+        <h3 v-else>isShow为false显示这行文字</h3>
+        <div v-if="score>=90">优秀</div>
+        <div v-else-if="score>=80">良好</div>
+        <div v-else>不及格</div> -->
+        <div>{{result}}</div>
+        <!-- 使用组件 -->
+        <cpn></cpn>
+        <h1>Hello APP!</h1>
+        <p>
+            <!-- 使用 router-link 组件来导航. -->
+            <!-- 通过传入 `to` 属性指定链接. -->
+             <!-- <router-link> 默认会被渲染成一个 `<a>` 标签 -->
+            <router-link to="/foo">Go to Foo</router-link>
+            <router-link to="/bar">Go to Foo</router-link>
+        </p>
+        <!-- 路由出口 -->
+        <!-- 路由匹配到的组件将渲染在这里 -->
+        <router-view></router-view>
+    </div>
+    <!-- <script src="index.js"></script> -->
+</body>
+</html>

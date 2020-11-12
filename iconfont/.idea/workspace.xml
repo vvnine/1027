@@ -2,21 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d07f9d1e-583b-4438-b68c-80a00345f89e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/demo_index.html" beforeDir="false" afterPath="$PROJECT_DIR$/css/demo_index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/iconfont.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/iconfont.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/iconfont.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/iconfont.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/iconfont.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/iconfont.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/iconfont.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/iconfont.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../testcss/dist/built.js" beforeDir="false" afterPath="$PROJECT_DIR$/../testcss/dist/built.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../testcss/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../testcss/dist/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../testcss/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../testcss/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../testcss/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../testcss/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../testcss/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../testcss/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../testcss/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/../testcss/webpack.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PluginHMR/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../PluginHMR/src/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,6 +48,7 @@
       <workItem from="1604389003110" duration="10585000" />
       <workItem from="1604449044023" duration="28611000" />
       <workItem from="1604985864922" duration="3026000" />
+      <workItem from="1605110029200" duration="16000" />
     </task>
     <servers />
   </component>

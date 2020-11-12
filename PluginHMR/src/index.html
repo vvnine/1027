@@ -10,7 +10,7 @@
         }
     </style>
 
-    <!-- <script src="index.js"></script> -->
+    <script src="index.js"></script>
 </head>
 <body>
     <!-- <div id='root'></div></br> -->
@@ -25,30 +25,15 @@
          {{index}}.{{item}}
         </li>
         </ul>
-        <h2 :style="{fontSize: Size}">{{message}}</h2>
+        <!-- 对象语法 -->
+        <!-- <h2 :style="{fontSize: '50px'}">{{message}}</h2>  固定写死的，必须加单引号，不然以为是变量--> 
+        <!-- <h2 :style="{fontSize: size ,color: color}">{{message}}</h2> -->
+        <!-- 还有一种 -->
+        <h2 :style="getstyle()">{{message}}</h2>
+        <!-- 数组语法，用的比较少 -->
+        <h2 :style="[baseStyle,baseStyle1]">{{message}}</h2>
+        <h2>{{fullName}}</h2>
+        <h2>哈利波特丛书总价格：{{totalPrice}}</h2>
     </div>
-    <script src="vue.js"></script>
-    <script type="text/javascript">    
-    const app= new Vue({
-        el:'#app',
-        data:{
-            counter:0,
-            currentIndex:0,
-            message:'测试测试',
-            Size:'100px',
-            movies: ['丹尼尔·雷德克里夫','鲁伯特·格林特','艾玛·沃特森','理查德·哈里斯']
-        },
-        methods:{
-            add:function(){
-                this.counter++
-            },
-            sub:function(){
-                this.counter--
-            },
-            }
-        })
-
-    
-        </script>
 </body>
 </html>
