@@ -13,11 +13,52 @@
         <div v-else-if="score>=80">良好</div>
         <div v-else>不及格</div> -->
         <div>{{result}}</div>
+        <span v-if="isUser"><label for="username">用户账号</label>
+            <input type="text" id="username"></span>
+        <span v-else><label for="emailname">邮箱账号</label>
+            <input type="text" id="emailname"></span>
+        <button @click="isUser =!isUser">切换类型</button>
+        <br>
+        <label for="male">
+            <input type="radio" id="male" value="男" v-model="sex">男
+        </label>
+        <label for="female">
+            <input type="radio" id="female" value="女" v-model="sex">女
+        </label>
+        <h3>您选择的性别的：{{sex}}</h3>
+        <label for="agree">
+            <input type="checkbox" id="agree" v-model="isAgree">同意协议
+        </label>
+        <h3>您选择的是：{{isAgree}}</h3>
+        <button :disabled="!isAgree">下一步</button><br>
+        <input type="checkbox" value="哈利波特1" v-model="movies">哈利波特1
+        <input type="checkbox" value="哈利波特2" v-model="movies">哈利波特2
+        <input type="checkbox" value="哈利波特3" v-model="movies">哈利波特3
+        <input type="checkbox" value="哈利波特4" v-model="movies">哈利波特4
+        <h3>您看过的电影有：{{movies}}</h3>
+        <!-- 选择一个 -->
+        <select name="abc" id="" v-model="fruit">
+            <option value="苹果" >苹果</option>
+            <option value="香蕉" >香蕉</option>
+            <option value="芒果" >芒果</option>
+            <option value="草莓" >草莓</option>
+            <option value="榴莲" >榴莲</option>
+        </select>
+        <h3>你选择的一个水果是：{{fruit}}</h3>
+        <!-- 选择两个 -->
+        <select name="abc" id="" v-model="fruits" multiple>
+            <option value="苹果" >苹果</option>
+            <option value="香蕉" >香蕉</option>
+            <option value="芒果" >芒果</option>
+            <option value="草莓" >草莓</option>
+            <option value="榴莲" >榴莲</option>
+        </select>
+        <h3>你选择的多个水果是：{{fruits}}</h3>
         <!-- 使用组件 -->
         <cpn></cpn>
         <h1>Hello APP!</h1>
-        <p>
-            <!-- 使用 router-link 组件来导航. -->
+        <!-- <p>
+            使用 router-link 组件来导航. -->
             <!-- 通过传入 `to` 属性指定链接. -->
              <!-- <router-link> 默认会被渲染成一个 `<a>` 标签 -->
             <router-link to="/foo">Go to Foo</router-link>
@@ -25,7 +66,7 @@
         </p>
         <!-- 路由出口 -->
         <!-- 路由匹配到的组件将渲染在这里 -->
-        <router-view></router-view>
+        <router-view></router-view> -->
     </div>
     <!-- <script src="index.js"></script> -->
 </body>

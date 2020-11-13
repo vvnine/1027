@@ -1,5 +1,5 @@
 import Vue from 'vue'
-import router from './router'
+// import router from './router'
 // //创建组件构造器对象
 // const cpnC = Vue.extend({
 //     template:`
@@ -15,6 +15,12 @@ const app = new Vue({
     data:{
         isShow:false,
         score:90,
+        isUser:true,
+        sex:'',
+        isAgree:false,
+        movies:[],
+        fruit:'香蕉',
+        fruits:[]
     },
     computed:{
         result(){
@@ -37,7 +43,6 @@ const app = new Vue({
     }}
 })
 window.app=app;
-//router
 new Vue({
     el:'#app',
     router,
