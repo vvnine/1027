@@ -1,0 +1,82 @@
+body{
+  background-color: #000;
+}
+h1{
+  text-align: center;
+  font-size: 25px;
+  font-weight: normal;
+  color: #FF7F00;
+}
+.left{
+  color:orange;
+  border:1px solid orange;
+  float:left;
+  margin-top: 15px;
+  padding:5px 5px;
+}
+.left from div:first-child{
+  margin-top:20px;
+}
+.right ul li{
+  float: right;
+  width: 200px;
+  height: 300px;
+  background-color: #999999;
+  margin-right: 75px;
+  margin-top: 15px;
+  box-shadow: 0 4px 5px rgba(0,0,0,0.2);
+  padding-right: 25px;
+  padding-top: 15px;
+}
+.right li img{
+  width:100px;
+  height:150;
+}
+
+.right li h5 {
+  font-size: 15px;
+  color: #FF7F00;
+}
+ul{
+  list-style: none;
+}
+a{
+  width: 200px;
+  height: 50px;
+  display: block;
+  text-align: center;
+  line-height: 50px;
+  color: #FF7F00;
+  font-size: 22px;
+  text-decoration: none;取消下划线
+}
+
+/* .toggleImg,
+.addImg,
+.delImg {
+  background-color: orange;
+  font-size: 16px;
+  border-radius: 5px;
+  margin:5px auto;
+  width: 110px;
+  height: 25px;
+  text-align: center;
+  box-shadow: 0 10px 5px 5px rgba(0, 0, 0, 0.3);
+} */
+/* .bannerNew{
+  background-color: orange;
+  font-size: 16px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  margin-right: auto;
+  margin-right:auto;
+  width: 110px;
+  height: 25px;
+  text-align: center;
+  box-shadow: 0 10px 5px 5px rgba(0, 0, 0, 0.3);
+}*/
+
+/* .aTop:hover{
+  background: url("../img/h.png") no-repeat;
+} */
+ */

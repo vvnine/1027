@@ -63,7 +63,7 @@
 /******/
 /******/ 	var hotApplyOnUpdate = true;
 /******/ 	// eslint-disable-next-line no-unused-vars
-/******/ 	var hotCurrentHash = "7756e17fedbfb365322f";
+/******/ 	var hotCurrentHash = "7547e76eebe18c4018d1";
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule;
@@ -923,7 +923,7 @@ eval("var g;\n\n// This works in non-strict mode\ng = (function() {\n\treturn th
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ \"./node_modules/vue/dist/vue.esm.js\");\n\nvar cart = new vue__WEBPACK_IMPORTED_MODULE_0__[\"default\"]({\n  el: '#cart',\n  data: {\n    books: [{\n      id: 1,\n      name: '《算法导论》',\n      data: \"2006-9\",\n      price: 85.00,\n      count: 1\n    }, {\n      id: 2,\n      name: '《UNIX编程艺术》',\n      data: \"2006-2\",\n      price: 59.00,\n      count: 1\n    }, {\n      id: 3,\n      name: '《web开发》',\n      data: \"2008-10\",\n      price: 30.00,\n      count: 1\n    }, {\n      id: 4,\n      name: '《java》',\n      data: \"2010-5\",\n      price: 66.00,\n      count: 1\n    }],\n    // methods: {\n    //   getFinalPrice(price){\n    //     return '￥' + price.toFixed(2)\n    //   }\n    // },\n    filters: {\n      showPrice: function showPrice(price) {\n        return '¥' + price.toFixed(2);\n      }\n    }\n  }\n});\n\n//# sourceURL=webpack:///./src/Cart.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ \"./node_modules/vue/dist/vue.esm.js\");\n\nvar cart = new vue__WEBPACK_IMPORTED_MODULE_0__[\"default\"]({\n  el: '#cart',\n  data: {\n    books: [{\n      id: 1,\n      name: '《算法导论》',\n      data: \"2006-9\",\n      price: 85.00,\n      count: 1\n    }, {\n      id: 2,\n      name: '《UNIX编程艺术》',\n      data: \"2006-2\",\n      price: 59.00,\n      count: 1\n    }, {\n      id: 3,\n      name: '《web开发》',\n      data: \"2008-10\",\n      price: 30.90,\n      count: 1\n    }, {\n      id: 4,\n      name: '《java》',\n      data: \"2010-5\",\n      price: 66.66,\n      count: 1\n    }]\n  },\n  methods: {\n    //     getFinalPrice(price) {\n    //         return '¥' + price.toFixed(2)\n    // },\n    increment: function increment(index) {\n      // console.log('increment',index)\n      this.books[index].count++;\n    },\n    decrement: function decrement(index) {\n      //  console.log('decrement',index)\n      this.books[index].count--;\n    },\n    removeHandle: function removeHandle(index) {\n      this.books.splice(index, 1);\n    }\n  },\n  computed: {\n    totalPrice: function totalPrice() {\n      var totalPrice = 0;\n\n      for (var i = 0; i < this.books.length; i++) {\n        totalPrice += this.books[i].price * this.books[i].count;\n      }\n\n      return totalPrice;\n    }\n  },\n  filters: {\n    showPrice: function showPrice(price) {\n      return '¥' + price.toFixed(2);\n    }\n  }\n});\n\n//# sourceURL=webpack:///./src/Cart.js?");
 
 /***/ })
 
