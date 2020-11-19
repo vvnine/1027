@@ -8,7 +8,7 @@
       <div>身高：</div>
       <div><input type="text" v-model="tall"> <div>厘米(kg)</div></div>
       </div>
-      <div><button @click="cal">计算</button></div>
+      <!-- <div><button @click="cal">计算</button></div> 用了computer,不用点击按钮就能出来-->
       <div class="output">
       <div>健康值：</div>
       <div>{{health}}（BMI）</div>
@@ -25,31 +25,56 @@
         return{
           weight: window.localStorage.getItem('weight') || '',
           tall: window.localStorage.getItem('tall') || '',
-          health:'',
+          // assess:'',
         }
       },
       computed: {
-         cal(){
-           let health = this.weight / (this.tall * this.tall);
-           switch(health){
-              case 'health<18.5':
-              this.assess ="体重过轻";
+         health(){
+           let health = this.weight / ((this.tall * this.tall)/10000);
+          //  let assess="";
+          //  switch(true){
+          //     case health<18.5:
+          //     assess ="体重过轻";
+          //     break;
+          //     case health>=18.5&&health<23.9:
+          //     assess ="体重正常";
+          //     break;
+          //     case health>=23.9&&health<27:
+          //     assess ="体重过重";
+          //      break;
+          //     case health>=27&&health<32:
+          //     assess ="体重肥胖";
+          //     break;
+          //     case health>32:
+          //     assess ="体重非常肥胖";
+          //      break;
+          //  }
+           return  health;
+        },
+        assess(){
+          let assess ="";
+          let health = this.weight / ((this.tall * this.tall)/10000);
+          switch(true){
+              case health<18.5:
+              assess ="体重过轻";
               break;
-              case 'health>=18.5&&health<23.9':
-              this.assess ="体重正常";
+              case health>=18.5&&health<23.9:
+              assess ="体重正常";
               break;
-              case 'health>=23.9&&health<27':
-              this.assess ="体重过重";
+              case health>=23.9&&health<27:
+              assess ="体重过重";
                break;
-              case 'health>=27&&health<32':
-              this.assess ="体重肥胖";
+              case health>=27&&health<32:
+              assess ="体重肥胖";
               break;
-              case 'health>32':
-              this.assess ="体重非常肥胖";
+              case health>32:
+              assess ="体重非常肥胖";
                break;
+              //  console.typeof(health)
            }
+           return assess;
         }
-      }
+      },
   }
 </script>
 
