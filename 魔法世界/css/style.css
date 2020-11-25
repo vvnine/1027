@@ -8,6 +8,30 @@ h1{
   color: #FF7F00;
 }
 .left{
+  position: absolute;
+}
+.left #coflag{
+  position: relative;
+  top:295px;
+  width:272px;
+  height:280px;
+  background-color: rgb(66, 64, 63);
+  cursor: pointer;
+}
+#coflag ul{
+  position: absolute;
+}
+#coflag ul li{
+  position: relative;
+  float:left;
+  left:-24px;
+  top:9px;
+}
+#coflag img{
+  width:116px;
+  height:116px;
+}
+.left1{
   color:orange;
   border:1px solid orange;
   float:left;
@@ -20,17 +44,19 @@ h1{
 .right ul li{
   float: right;
   width: 200px;
-  height: 300px;
+  height: 250px;
   background-color: #999999;
   margin-right: 75px;
   margin-top: 15px;
   box-shadow: 0 4px 5px rgba(0,0,0,0.2);
   padding-right: 25px;
   padding-top: 15px;
+  text-align: center;
 }
 .right li img{
   width:100px;
-  height:150;
+  height:130px;
+  text-align: center;
 }
 
 .right li h5 {
@@ -48,8 +74,34 @@ a{
   line-height: 50px;
   color: #FF7F00;
   font-size: 22px;
-  text-decoration: none;取消下划线
+  text-decoration: none;/*取消下划线*/
 }
+
+#banner img{
+   cursor: pointer;/*变手型*/
+}
+
+.welcome{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-evenly;
+  align-items:center;
+}
+.change{
+  color: #FF7F00;
+  height: 20px;
+  width: 100px;
+  border: 1px solid #f35010;
+  text-align: center;
+  background-color: #0f0f33;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+
+
+
+
 
 /* .toggleImg,
 .addImg,
@@ -79,4 +131,3 @@ a{
 /* .aTop:hover{
   background: url("../img/h.png") no-repeat;
 } */
- */

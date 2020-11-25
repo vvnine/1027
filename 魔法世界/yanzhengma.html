@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>验证码</title>
+  <style>
+    #yanzheng{
+      margin:50px auto;
+      width:300px;
+      height:20px;
+    }
+    #code{
+      width:150px;
+      height:150px;
+      background-color: #ddd;
+      padding:10px;
+      line-height: 150px;
+      text-align: center;
+      font-size: 20px;
+      color:orange;
+      font-weight:bold;
+    }
+    
+  </style>
+</head>
+<body>
+  <div id="yanzheng">
+    <div id="code"></div>
+    <input type="text" id="newCode">
+    <input type="button" name="" id="validate" value="验证">
+  </div>
+  <script>
+    window.onload = function(){
+      var code='';
+      // 1.获取对应标签
+      var codeDiv = document.getElementById('code');
+      var newCodeInput = document.getElementById('newCode');
+      var validate = document.getElementById('validate');
+      //获取min到Max之间的整数(1~100)
+      function random(max,min){
+          return Math.floor(Math.random()*(max-min)+min);
+      }
+      function createCode(){
+          code = '';
+          var codeLength = 4;
+          var randomCode = [0,1,2,3,4,5,6,7,8,9,'A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'];
+          for(var i=0;i<codeLength; i++){
+              var index = random(0,36);
+              code +=randomCode[index];
+          }
+          console.log(code);
+          codeDiv.innerHTML = code;
+      }
+      createCode();
+      // 验证按钮校验
+      validate.onclick = function(){
+        //获取用户新输入的验证码，把小写转大写
+          var newCode = newCodeInput.value.toUppCase;
+          if(newCode === code){
+              window.location.href = 'file:///C:/Users/67564/WebstormProjects/web/%E9%AD%94%E6%B3%95%E4%B8%96%E7%95%8C/day1.html';
+          }else{
+              alert('验证码不正确，请重新输入！');
+              newCodeInput.value = '';
+              createCode();
+            }
+        }
+    }
+</script>
+</body>
+</html>

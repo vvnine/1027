@@ -11,9 +11,9 @@
       <!-- <div><button @click="cal">计算</button></div> 用了computer,不用点击按钮就能出来-->
       <div class="output">
       <div>健康值：</div>
-      <div>{{health}}（BMI）</div>
+      <div>{{getHealth.health}}（BMI）</div>
       <div>系统评价：</div>
-      <div>{{assess}}</div>
+      <div>{{getHealth.assess}}</div>
       </div>
     </div>
   </div>
@@ -29,31 +29,10 @@
         }
       },
       computed: {
-         health(){
-           let health = this.weight / ((this.tall * this.tall)/10000);
-          //  let assess="";
-          //  switch(true){
-          //     case health<18.5:
-          //     assess ="体重过轻";
-          //     break;
-          //     case health>=18.5&&health<23.9:
-          //     assess ="体重正常";
-          //     break;
-          //     case health>=23.9&&health<27:
-          //     assess ="体重过重";
-          //      break;
-          //     case health>=27&&health<32:
-          //     assess ="体重肥胖";
-          //     break;
-          //     case health>32:
-          //     assess ="体重非常肥胖";
-          //      break;
-          //  }
-           return  health;
-        },
-        assess(){
+        getHealth(){
           let assess ="";
-          let health = this.weight / ((this.tall * this.tall)/10000);
+          let health = this.weight / ((this.tall * this.tall)/10000)||0;
+          health = health.toFixed(2)
           switch(true){
               case health<18.5:
               assess ="体重过轻";
@@ -72,9 +51,14 @@
                break;
               //  console.typeof(health)
            }
-           return assess;
-        }
-      },
+           if(health==0){
+             assess="请输入身高体重"
+           }
+           let obj={}
+           obj.health=health
+           obj.assess=assess
+           return obj;
+        }}
   }
 </script>
 

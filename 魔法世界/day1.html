@@ -2,35 +2,40 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>day1</title>
+  <title>魔法世界</title>
   <link href="css/style.css" rel="stylesheet">
-  <!-- <script src="main.js" defer></script> -->
+  <script src="main.js" defer></script>
+  
 <body>
 <div id="banner" >
-  <img src="img/11.jpeg" alt=""width="100%"height="200" id="mv" class="mvClass">
-  <!-- <div class="edit">
-    <ul>
-      <li class="toggleImg">切换图片</li>
-      <li class="addImg">添加切换图片</li>
-      <li class="delImg">删除切换图片</li>
-    </ul>
-  </div> -->
+  <img src="img/zhantai.jpg" alt="" width="100%" height="300" id="mv" class="mvClass">
 </div>
-
-<h1>欢迎魔法师</h1>
-</br>
-<!-- <a href="#" class="aTop">点击进入魔法世界</a> -->
+<div class="welcome">
+  <h1>欢迎魔法师</h1>
+  <div class="change">切换用户</div>
+</div>
 <div class="content">
   <div class="left">
-    <div>魔法师登录信息填写</div>
+  <div class="left1">
+    <div>魔法师信息填写</div>
     <from>
-      <div>魔法师姓名：<input type="text"autofocus></div><br>
-      <div>学号：<input type="number"autofocus></div><br>
-      <div>手机号：<input type="tel"autofocus></div> <br>
-      <div>猫头鹰邮箱：<input type="eml"autofocus></div><br>
-      <div>入学时间：<input type="date"autofocus></div>
+      <div>魔法师姓名：<input type="text"autofocus placeholder="请输入魔法师姓名"></div><br>
+      <div>手机号：<input type="tel"autofocus placeholder="请输入手机号" id="tel"></div> <br>
+      <div>猫头鹰邮箱：<input type="text"autofocus placeholder="请输入猫头鹰邮箱" id="emleml"></div><br>
+      <div>入学时间：<input type="date"autofocus placeholder="请输入入学时间"></div>
+      <input type="submit" id="imformation">
     </from>
   </div>
+  <div id="coflag">
+    <ul>
+      <li><img src="img/hh.jpg" alt="" /></li>
+         <li> <img src="img/l.jpg" alt="" /></li>   
+         <li><img src="img/lv.jpg" alt="" /></li>
+         <li><img src="img/h.jpg" alt="" /></li> 
+          </ul>
+
+</div>
+</div>
   <div class="right ">
     <ul>
       <li>
@@ -77,5 +82,18 @@
   </div>
 </div>
 
+
+<script src="js/jquery.min.js"></script>
+<script>
+  $(function() {
+      //鼠标进入的时候,其他透明度0.5
+      $("#coflag li").hover(function() {
+          $(this).siblings().stop().fadeTo(400, 0.5);
+      }, function() {
+          // 鼠标离开，其他透明度1
+          $(this).siblings().stop().fadeTo(400, 1);
+      })
+  });
+</script>
 </body>
 </html>
